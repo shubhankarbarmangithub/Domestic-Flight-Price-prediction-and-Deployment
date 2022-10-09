@@ -9,7 +9,7 @@ model = pickle.load(open("model.pkl", "rb"))
 
 
 
-@app.route("/")
+@app.route("/home")
 @cross_origin()
 def home():
     return render_template("index.html")
